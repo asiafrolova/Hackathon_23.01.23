@@ -1,0 +1,73 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    //TODO
+    id 'com.google.gms.google-services'
+
+}
+
+android {
+    namespace 'com.king.zxing.app'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.king.zxing.app"
+        minSdk 26
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildFeatures{
+        viewBinding=true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    compileOptions {
+        coreLibraryDesugaringEnabled true
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    //TODO
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+}
+
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-database:20.3.0'
+    implementation 'com.google.firebase:firebase-auth:22.3.0'
+    testImplementation deps.test.junit
+    androidTestImplementation deps.test.android_ext_junit
+    androidTestImplementation deps.test.espresso
+
+    implementation deps.androidx.design
+    implementation deps.androidx.appcompat
+    implementation deps.androidx.constraintlayout
+
+    coreLibraryDesugaring deps.desugar_jdk
+
+    implementation project(':zxing-lite')
+
+    //TODO
+    implementation(platform("com.google.firebase:firebase-bom:32.6.0"))
+    implementation('com.google.firebase:firebase-analytics:21.5.0')
+    implementation("com.google.android.material:material:1.10.0")
+
+}
+

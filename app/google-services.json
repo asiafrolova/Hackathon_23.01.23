@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "300025218292",
+    "firebase_url": "https://zxing-765a4-default-rtdb.firebaseio.com",
+    "project_id": "zxing-765a4",
+    "storage_bucket": "zxing-765a4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300025218292:android:529ea1e2c69e1071c38aa1",
+        "android_client_info": {
+          "package_name": "com.king.zxing.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDD9j-tLt0iE7kfq58m7Qk1L_oqnkXkfRM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

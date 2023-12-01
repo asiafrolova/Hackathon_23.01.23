@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MySchool</string>
+    <string name="tips_scan_qr_code">Просканируйте QR-код</string>
+
+</resources>
